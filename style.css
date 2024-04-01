@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+html{
+    font-size: 62.5%;
+}
+body{
+    border: 1rem solid #1d1e4c;
+   
+}
+
+.top_box{
+    min-height: 10rem;
+    border: 1rem solid #1d1e4c;
+    margin: 2rem;
+    margin-bottom: -1rem;
+    background-image: url("background_image.jpg");
+    background-color: #cccccc;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+.botom_box{
+    display: flex;
+    
+}
+
+.navigation_box{
+    min-width: 40rem;
+    min-height: 40rem;
+    padding: 3rem;
+    border: 1rem solid #1d1e4c;
+    margin: 2rem;
+    margin-right: -1rem;
+    background-color: rgb(227, 227, 130);
+}
+.navigation_box ul li{
+    list-style: none;
+    padding: 1rem;
+    font-size: 2rem;
+    
+    
+}
+.navigation_box ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navigation_box ul li a:hover{
+    color: blue;
+}
+.navigation_box ul li:hover{
+    background-color: rgb(255, 255, 255);
+    color: blue;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 1rem;
+
+}
+.content_box{
+    min-width: 60rem;
+    min-height: 40rem;
+    padding: 3rem;
+    border: 1rem solid #1d1e4c;
+    margin: 2rem;
+    font-size: 2rem;
+}
+.content_box h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.content_box  p{
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+}
+/* writing media query for responsiveness */
+@media(max-width: 768px){
+    html{
+        font-size: 52.5%;
+    }
+    .botom_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation_box{
+        margin-left: 2rem;
+    }
+}
+@media(max-width: 425px){
+    html{
+        font-size: 32.5%;
+    }
+    .botom_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation_box{
+        margin-left: 2rem;
+    }
+}
